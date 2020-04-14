@@ -1,6 +1,6 @@
-package com.tlstudyadmin.modules.rabbitmq.entity;
+package com.tlstudyadmin.modules.entity;
 
-import com.tlstudyadmin.modules.rabbitmq.enums.RabbitMqOrderStatusEnum;
+import com.tlstudyadmin.framework.enums.RabbitMqOrderStatusEnum;
 import lombok.Data;
 
 import javax.persistence.*;

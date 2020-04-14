@@ -1,4 +1,4 @@
-package com.tlstudyadmin.modules.rabbitmq.entity;
+package com.tlstudyadmin.modules.entity;
 
 import lombok.Data;
 

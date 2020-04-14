@@ -1,4 +1,4 @@
-package com.tlstudyadmin.modules.rabbitmq.enums;
+package com.tlstudyadmin.framework.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -9,27 +9,36 @@ spring:
     password:
     druid:
       stat-view-servlet:
-        # Ä¬ÈÏtrue ÄÚÖÃ¼à¿ØÒ³ÃæÊ×Ò³/druid/index.html
+        # è®¿é—® /druid/index.html
         enabled: true
         url-pattern: /druid/*
-        # ÔÊĞíÇå¿ÕÍ³¼ÆÊı¾İ
         reset-enable: true
         login-username: root
         login-password: root
-        # IP°×Ãûµ¥ ¶à¸ö¶ººÅ·Ö¸ô
         allow:
-        # IPºÚÃûµ¥
         deny:
       filter:
         stat:
-          # ÏÔÊ¾Âısql Ä¬ÈÏµ±³¬¹ı3ÃëÏÔÊ¾
           log-slow-sql: true
   jpa:
     hibernate:
       ddl-auto: update
       dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
-
+  rabbitmq:
+    host: 60.205.231.241
+    port: 5672
+    virtual-host: zhaojie
+    username: zj
+    password: zj
+    listener:
+      simple:
+        #æ‰‹åŠ¨ç­¾æ”¶
+        acknowledge-mode: manual
+        #çº¿ç¨‹å¹¶å‘æ•°
+        concurrency: 5
+        #æœ€å¤§çº¿ç¨‹å¹¶å‘æ•°
+        max-concurrency: 10
 
 logging:
   level:
